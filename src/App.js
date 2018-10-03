@@ -39,7 +39,7 @@ export default class App extends React.Component {
         for(var i=0; i < res.data.data.length; i++) {
           //console.log(i);
 
-          
+
           //top 10 names on the every list possible
           if(res.data.data[i]["13"] <= 10) {
             //console.log(res.data.data[i][12]);
@@ -84,6 +84,21 @@ export default class App extends React.Component {
       })
   }
 
+
+  filterData(dataNamesArr) {
+
+    for(i = 0; i < dataNamesArr.length; i++){
+
+      let yearArg = (dataNamesArr[i][8] === this.state.filter.year) || this.state.filter.year === "";
+      let genderArg = (dataNamesArr[i][9] === this.state.filter.gender) || this.state.filter.gender === "";
+      let ethnicityArg = (dataNamesArr[i][10] === this.state.filter.ethnicity) || this.state.filter.ethnicity === "";
+      
+
+/*      if(yearArg && genderArg && ethnicityArg){
+        let counter = 
+      } */
+    }
+  }
 
 
 

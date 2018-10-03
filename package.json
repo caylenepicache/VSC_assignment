@@ -20,10 +20,12 @@
   "homepage": "https://github.com/caylenepicache/VSC_assignment#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "chart.js": "^2.7.2",
     "d3-react-squared": "^0.6.0",
     "d3-scale": "^2.1.2",
     "npm": "^6.4.1",
     "react": "^16.5.2",
+    "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
