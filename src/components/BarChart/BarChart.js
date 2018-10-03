@@ -20,7 +20,7 @@ export default class BarChart extends Component {
         if(JSON.stringify(this.props.most_popular) !== JSON.stringify(props.state.most_popular)){
             this.setState({
                 mostPopularNames : props.state.mostPopularNames,
-                nameLabels : name_labels,
+                nameLabels : nameLabels,
                 data : data
             })
         }
@@ -38,7 +38,7 @@ export default class BarChart extends Component {
         <div >
             
             <Bar
-                data = {{ labels: this.state.name_labels,
+                data = {{ labels: this.state.nameLabels,
                 datasets: [{
                     data: this.state.data,
                     backgroundColor: [
