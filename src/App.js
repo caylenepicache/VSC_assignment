@@ -21,8 +21,7 @@ export default class App extends React.Component {
 
         console.log(res);
         //console.log(res.data.data)
-        console.log(res.data.data)
-        console.log(res.data.data[13][11]);
+        
 
         //get values and place in arrays 
         let topTenArr = [];
@@ -50,7 +49,7 @@ export default class App extends React.Component {
 
           if(!ethnicityArr.includes(res.data.data[i][10])) {
             //console.log(res.data.data[i][10]);
-            yearArr.push(res.data.data[i][10]);
+            ethnicityArr.push(res.data.data[i][10]);
           }
         }
 
