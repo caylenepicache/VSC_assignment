@@ -84,7 +84,7 @@ export default class App extends React.Component {
       })
   }
 
-
+//filter data to match buttons
   filterData(dataNamesArr) {
 
     for(i = 0; i < dataNamesArr.length; i++){
@@ -101,6 +101,8 @@ export default class App extends React.Component {
   }
 
 
+
+  
 
 
   render() {

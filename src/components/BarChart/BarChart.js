@@ -5,22 +5,22 @@ export default class BarChart extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            most_popular : [],
-            name_labels : [],
+            mostPopularNames : [],
+            nameLabels: [],
             data : []
             
         }
     }
 
-    componentWillReceiveProps(nextProps) {
+    componentWillReceiveProps(props) {
 
-        var name_labels = nextProps.state.most_popular.map( element => element[0]);
-        var data        = nextProps.state.most_popular.map( element => element[1])
+        var name_labels = props.state.most_popular.map( element => element[0]);
+        var data        = props.state.most_popular.map( element => element[1])
 
-        if(JSON.stringify(this.props.most_popular) !== JSON.stringify(nextProps.state.most_popular)){
+        if(JSON.stringify(this.props.most_popular) !== JSON.stringify(props.state.most_popular)){
             this.setState({
-                most_popular : nextProps.state.most_popular,
-                name_labels : name_labels,
+                mostPopularNames : props.state.mostPopularNames,
+                nameLabels : name_labels,
                 data : data
             })
         }
